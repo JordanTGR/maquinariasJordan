@@ -1,0 +1,120 @@
+:root {
+    --primario-color: #333;
+    --secondary-color: #ffd700;
+    --tertiary-color: #fffacd;
+    --background-color: #f0f0f0;
+    --text-color: #333;
+    --header-footer-bg-color: #333;
+    --main-bg-color: #fff;
+    --main-box-shadow: rgba(0, 0, 0, 0.1);
+    --highlight-color: #b8860b;
+    --section-bg-color: #fff8dc;
+    --section-border-color: #b8860b;
+    --footer-text-color: #fff;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Header and Navigation */
+header {
+    background-color: var(--header-footer-bg-color);
+    padding: 10px 0;
+    box-shadow: 0 4px 8px var(--main-box-shadow);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--tertiary-color);
+}
+
+/* Main Content */
+main {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: var(--main-bg-color);
+    box-shadow: 0 4px 8px var(--main-box-shadow);
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+h1 {
+    color: var(--highlight-color);
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+section {
+    margin: 40px 0;
+}
+
+section img {
+    border: 3px solid var(--highlight-color);
+    border-radius: 10px;
+}
+
+section img:hover {
+    transform: scale(1.02);
+}
+
+section p {
+    background-color: var(--section-bg-color);
+    padding: 20px;
+    border: 2px solid var(--section-border-color);
+    border-radius: 5px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px var(--main-box-shadow);
+    text-align: justify;
+    line-height: 1.6;
+    font-family: 'Georgia', serif;
+    color: var(--text-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--header-footer-bg-color);
+    padding: 30px 0;
+    text-align: center;
+    color: var(--footer-text-color);
+    display: flex;
+    justify-content: space-around;
+}
+
+footer div {
+    margin-bottom: 20px;
+}
+
+footer h2 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.2em;
+}
