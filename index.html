@@ -18,32 +18,58 @@
             </ul>
         </nav>
     </header>
+
+    <script>
+        console.log(Window);
+        let nombre = prompt("Cual es tu nombre");
+        let apellido = prompt("Cual es tu apellido");
+        let edad = prompt("Cual es tu edad");
+        console.log(nombre);
+        console.log(apellido);
+        console.log(edad);
+
+        if (edad >= 18) {
+            alert("Genial, puedes alquilar la maquinaria que requieras.");
+            document.body.style.backgroundColor = "light grey";
+        } else {
+            alert("No puedo brindarte el servicio, eres menor de edad");
+            document.body.style.backgroundColor = "red";
+            setTimeout(() =>
+                window.location.href = "https://www.google.com");
+        }
+
+    </script>
+
     <main>
         <h1>Maquinarias Jordan</h1>
         <section class="content-section">
             <div class="image-container"><img
                     src="https://assets.cnhindustrial.com/casece/latam/assets/Products/Backhoe-Loaders/580N%20S2/hotspot/hotspot.jpg"
                     alt="Maquinaria" width="780px"></div>
-                    <div class="text-container">
-            <p>En Maquinarias Jordan, nuestra misión es facilitar tu trabajo proporcionando maquinaria de alta calidad,
-                con
-                un servicio de atención al cliente inigualable. Sabemos lo importante que es contar con equipos fiables
-                para
-                llevar a cabo tus proyectos, por eso nos esforzamos por ser tu socio de confianza en cada paso del
-                camino.
-            </p>
-        </div>
+            <div class="text-container">
+                <p>En Maquinarias Jordan, nuestra misión es facilitar tu trabajo proporcionando maquinaria de alta
+                    calidad,
+                    con
+                    un servicio de atención al cliente inigualable. Sabemos lo importante que es contar con equipos
+                    fiables
+                    para
+                    llevar a cabo tus proyectos, por eso nos esforzamos por ser tu socio de confianza en cada paso del
+                    camino.
+                </p>
+            </div>
         </section>
         <section class="content-section">
             <div class="image-container"><img
                     src="https://www.deere.com/assets/images/common/products/backhoes/310-p-tier/310p_tier_backhoe_2_large_9bf519580ced59cf7aab49a353412a060237cec8.jpg"
                     alt="excavadora" width="780px"></div>
-                    <div class="text-container">
-            <p>Maquinarias Jordan fue fundada por Jordan, un ingeniero apasionado por las máquinas y la agricultura,
-                para ofrecer equipos de alta calidad y un servicio excepcional. Con el apoyo de su familia, la empresa
-                se ha convertido en un socio de confianza, ayudando a profesionales a realizar sus proyectos con éxito.
-            </p>
-        </div>
+            <div class="text-container">
+                <p>Maquinarias Jordan fue fundada por Jordan, un ingeniero apasionado por las máquinas y la agricultura,
+                    para ofrecer equipos de alta calidad y un servicio excepcional. Con el apoyo de su familia, la
+                    empresa
+                    se ha convertido en un socio de confianza, ayudando a profesionales a realizar sus proyectos con
+                    éxito.
+                </p>
+            </div>
         </section>
     </main>
     <footer>
